@@ -1,0 +1,100 @@
+/* index.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+.nav {
+    background-color: #671523;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    margin: 20px 0;
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+select:hover {
+    border-color: #671523;
+}
+
+#cricketers {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     
+}
+
+#cricketers:hover {
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#cricketers img {
+    max-width: 200px;
+    height: 250px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#cricketers img:hover{
+    transform: translate(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.details-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.details-text h2 {
+    margin-top: 0;
+    color: #671523;
+}
+
+.details-text p {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    #cricketers {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #cricketers img {
+        margin: 20px 0 0 0;
+    }
+
+    .details-text {
+        margin: 0;
+    }
+}

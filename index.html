@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricketer Details</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>Indian Cricketers</h1>
+    </div>
+    <div class="options">
+        <label for="cricketer">Select a cricketer</label>
+        <select id="cricketer" onchange="showDetails()">
+           
+            <option value="sc">--Select Cricketer--</option>
+            <option value="sachin">Sachin Tendulkar</option>
+            <option value="virat">Virat Kohli</option>
+            <option value="dhoni">MS Dhoni</option>
+           
+        </select>
+    </div>
+    
+    
+    <div id="cricketers"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
